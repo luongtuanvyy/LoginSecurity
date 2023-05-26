@@ -62,4 +62,9 @@ public class LoginController {
         model.addAttribute("user",new User());
         return "register";
     }
+
+    @PostMapping("/register")
+    public String saveAccount(){
+        return "register";
+    }
 }
